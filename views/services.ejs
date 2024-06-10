@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="services.css">
+    <link rel="shortcut icon" href="images/icons/3.png" type="image/x-icon">
+    <title>Services | GLT</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <%- include('components/navbar.ejs'); %>
+
+
+        <header>
+            <div class="img">
+                <h1>OUR SERVICES</h1>
+            </div>
+        </header>
+
+        <!---------------------------------------------------------- Main Area ------------------------------------------------------->
+
+        <div class="overlay" id="overlay"></div>
+
+        <!-------------------------------------------------------- Service Cards -------------------------------------------------------->
+
+        <div class="card" id="card">
+            <h3 onclick="hideCard()" style="cursor: pointer;">x</h3>
+            <div class="content">
+                <img id="modalImage" src="" alt="">
+                <br>
+                <h1 id="modalTitle"></h1>
+                <ul id="modalList"></ul>
+                <br>
+                <button><a href="{{ url_for('views.quote') }}">Request a Quote</a></button>
+            </div>
+        </div>
+
+        <section class="services">
+            <div class="s">
+                <div class="ss" style="background: url('images/services/SWS.jpg'); background-size: cover;">
+                    <div class="ss1">
+                        <h3>Salt Water Supply</h3>
+                        <br>
+                        <p>
+                            Perfect Quality for Perfect Living! We are here to provide a good living.
+                        </p>
+                        <br>
+                        <button class="btn" data-content="
+                    <li>Salt Water Or Non-Potable Water Is used to save the cost.</li>
+                    <li>It is mainly used for dust or sand suppression at construction sites.</li>
+                    <li>It is used for  Plastic road barrier filling.</li>
+                    <li>It is also used  for foundation or pilling jobs.</li>
+                    <li>Salt water spraying for soil compaction is also one of its uses.</li>"
+                            data-image-src="{{ url_for('static', filename='images/services/SWS.jpg') }}"
+                            data-title="Salt Water Supply" onclick="showCard(this)">View Service</button>
+                    </div>
+                </div>
+
+                <div class="ss" style="background: url('images/services/SWR.jpg')'; background-size: cover;">
+                    <div class="ss1">
+                        <h3>Salt Water Removal</h3>
+                        <br>
+                        <p>
+                            From Seawater to drinking water, we are at your service.
+                        </p>
+                        <br>
+                        <button onclick="showCard(this)" class="btn" data-title="Salt Water Removal"
+                            data-content="
+                    <li>Salt Water removal or desalination is the process by which the dissolved mineral salts in water are removed.</li>
+                    <li>Desalination is used to produce water suitable for human consumption, sanitation, and irrigation purposes.</li>"
+                            data-image-src="{{ url_for('static', filename='images/services/SWR.jpg') }}">View
+                            Service</button>
+                    </div>
+                </div>
+
+                <div class="ss" style="background-image: url('images/services/FWR.jpg'); background-size: cover;">
+                    <div class="ss1">
+                        <h3>Flushing Water Removal</h3>
+                        <br>
+                        <p>
+                            Let's accomplish the objective of clean water for a healthy world together!
+                        </p>
+                        <br>
+                        <button onclick="showCard(this)" class="btn" data-title="Flushing Water Removal"
+                            data-content="<li>We offer full service removal, transportation and disposal services while maintaining the safety and regulations related to toxic and hazardous wastes.</li>
+                                             <li>We ensure that the task is done in an efficient, safe and timely manner.</li>
+                                             <li>Our dedicated team is capable of delivering the solutions besides guiding our customers about the right waste management and disposal solution.</li>
+                                             <li>While transporting and disposing of the sewage, we strictly comply with the standards stipulated by the local authorities.</li>
+                                             <li>Sewage waste water is (non-hazardous waste), that is generated from communities, labor camps, offices and industrial areas.
+                                                 It is collected in holding tanks not having sewerage network drain lines.</li>"
+                            data-image-src="{{ url_for('static', filename='images/services/FWR.jpg') }}">View
+                            Service</button>
+                    </div>
+                </div>
+
+
+                <div class="ss" style="background: url('images/services/IWS.jpg'); background-size: cover;">
+                    <div class="ss1">
+                        <h3>Irrigation Water Supply</h3>
+                        <br>
+                        <p>
+                            Water is priceless for us and is going to be the same for the future generations to come.
+                        </p>
+                        <br>
+                        <button onclick="showCard(this)" class="btn" data-title="Irrigation Water Supply" data-content="
+                    <li>We provide water for the purpose of irrigation with the help of our large size tankers.</li>
+                    <li>Irrigation tanker is a huge tanker which holds enough water to irrigate large fields with the help of connecting pipes.</li>
+                    <li>Tankers for irrigation, depending on your needs, are offered for short and long term requirements.</li>
+                    <li>Our competent team supplies and delivers water tankers for irrigation purposes to different sites all over Dubai.</li>
+                    <li>Our water meets the required standard and so does our service.</li>"
+                            data-image-src="{{ url_for('static', filename='images/services/IWS.jpg') }}">View
+                            Service</button>
+                    </div>
+                </div>
+
+                <div class="ss" style="background: url('images/services/SWST.jpg'); background-size: cover;">
+                    <div class="ss1">
+                        <h3>Sweet Water Supply</h3>
+                        <br>
+                        <p>
+                            Water sustains life, but safe clean drinking water defines civilization. Offering easy
+                            access
+                            and availability of our service of sweet water supply at your doorstep.
+                        </p>
+                        <br>
+                        <button onclick="showCard(this)" class="btn" data-title="Sweet Water Supply" data-content="
+                    <li>We offer sweet potable water delivery by truck or bower to any location in Dubai.</li>
+                    <li>We specialize in providing high quality, pure drinking water that is sourced only from Government filling station Dubai or Dewa.</li>
+                    <li>We offer both residential and commercial delivery services, as well as bulk water solutions for events and construction sites.</li>
+                    <li>Urgent Sweet water tanker supply is at your service within an hour.</li>
+                    <li>Pool filling Guys is a premium water service provider that offers a range of solutions for your fresh water needs.</li>
+                    " data-image-src="{{ url_for('static', filename='images/services/SWST.jpg') }}">View
+                            Service</button>
+                    </div>
+                </div>
+
+                <div class="ss" style="background: url('images/services/LWR.jpeg'); background-size: cover;">
+                    <div class="ss1">
+                        <h3>Laundry Water Removal</h3>
+                        <br>
+                        <p>
+                            Quality matters and we will ensure it to you, choose us!
+                        </p>
+                        <br>
+                        <button onclick="showCard(this)" class="btn" data-title="Laundry Water Removal" data-content="
+                    <li>We provide economical water removal systems that are an inexpensive, simple way to remove grey water.</li>
+                    <li>This particular service includes removal of greywater from laundry trays and sinks that are below your main sewer lines.</li>
+                    <li>Our systems remove water from laundry trays, sinks, etc, where gravity drainage is impractical.</li>
+                    <li>With years of experience we ask for your trust so we can give our best service to you.</li>"
+                            data-image-src="{{ url_for('static', filename='images/services/LWR.jpeg') }}">View
+                            Service</button>
+                    </div>
+                </div>
+
+                <div class="ss" style="background: url('images/services/WWR.jpg'); background-size: cover;">
+                    <div class="ss1">
+                        <h3>Waste Water Removal</h3>
+                        <br>
+                        <p>
+                            Make a smart choice with life by choosing us and our services.
+                        </p>
+                        <br>
+                        <button onclick="showCard(this)" class="btn" data-title="Waste Water Removal" data-content="
+                    <li>Pool Filling guys is a leading provider of water damage restoration and emergency water extraction company in Dubai.</li>
+                    <li>We offer comprehensive services for flood water removal and its services, sewage water removal, water remediation, and raw sewage cleanup.</li>
+                    <li>Our team is equipped with the latest technology and expertise to handle all of your water remediation needs.</li>
+                    <li>Our services further includes drain pool service, water tank cleaning, building water tank and cleaning service, tank de-watering service,
+                    air conditioner and chiller plants water removal service and chiller flushing water removal service.</li>
+                    <li>By using treated waste water, industrial customers might save up to 50% in water costs.</li>"
+                            data-image-src="{{ url_for('static', filename='images/services/WWR.jpg') }}">View
+                            Service</button>
+                    </div>
+                </div>
+
+                <div class="ss" style="background: url('images/services/GWR.jpg'); background-size: cover;">
+                    <div class="ss1">
+                        <h3>Grey Water Removal</h3>
+                        <br>
+                        <p>
+                            Let’s build a healthy community together with our services to you.
+                        </p>
+                        <br>
+                        <button onclick="showCard(this)" class="btn" data-title="Grey Water Removal" data-content="
+                    <li>Grey water can be recycled on-site for uses such as toilet flushing, landscape irrigation and constructed wetlands.</li>
+                    <li>After being treated and purified in sewage treatment facilities, grey water is converted into
+                    treated sewage effluent (TSE) and can be re-utilized for a vast range of purposes.</li>
+                    <li>Our designed sewage treatment plants are equipped with Membrane Bio Reactor Systems and other innovative technologies.</li>
+                    <li>Our plants are also designed to have a tanker receiving facility for the areas where sewerage networks are not built.</li>
+                    <li>The benefits includes highly re-usability element for irrigation, cooling, agriculture, landscaping,
+                    golf course’s irrigation, cooling water for power plants and oil refineries, processing water for mills,
+                    plants, toilet flushing, construction activities, concrete mixing and artificial lakes.  </li>"
+                            data-image-src="{{ url_for('static', filename='images/services/GWR.jpg') }}">View
+                            Service</button>
+                    </div>
+                </div>
+
+                <div class="ss" style="background: url('images/services/DS.jpg'); background-size: cover;">
+                    <div class="ss1">
+                        <h3>Diesel Supply</h3>
+                        <br>
+                        <p>
+                            Embrace life, embrace us to provide you with the best.
+                        </p>
+                        <br>
+                        <button onclick="showCard(this)" class="btn" data-title="Diesel Supply"
+                            data-content="
+                    <li>We strive to achieve the highest levels of proficiency in delivering top-quality diesel supply in Dubai.</li>
+                    <li>We cover a wide array of fuel needs for commercial customers, transportation companies, government agencies, and much more.</li>
+                    <li>We believe in the consistent diesel supply of utmost standards with superior response time delivery and at the best possible prices.</li>
+                    <li>We’re staffed with a specialized team devoted to consistently providing unparalleled services to our consumers in Dubai.</li>
+                    <li>We supply quality diesel best in terms of engine performance and environmental aspects, paving the way for cleaner, breathable air.</li>"
+                            data-image-src="{{ url_for('static', filename='images/services/DS.jpg') }}">View
+                            Service</button>
+                    </div>
+                </div>
+
+                <div class="ss" style="background: url('{{ url_for(images/services/RS.jpeg'); background-size: cover;">
+                    <div class="ss1">
+                        <h3>Rental Services</h3>
+                        <br>
+                        <p>
+                            Expect the best experience from us by availing our rental services.
+                        </p>
+                        <br>
+                        <button onclick="showCard(this)" class="btn" data-title="Rental Services" data-content="
+                    <li>We are UAE’s Reliable Heavy Equipment Rental Company. Besides construction equipment cranes in UAE,
+                        our heavy equipment rental company also offers Backhoe Loader, Excavator, Forklift, Telehandler, Wheel Loader and more.</li>
+                    <li>You can hire them on a daily, weekly, or monthly basis. Our rental price depends upon per day and hourly requirements.</li>
+                    <li>Our Equipment Rental Services in UAE provide solutions to industries such as construction, to their ongoing requirement of heavy equipment.</li>
+                    <li>We offer a wide range of Heavy Machinery Tools and our trucks on a rental basis to hire across UAE,
+                        available at reasonable prices. Some of them are; Light Tipper Truck(2 ton – 16 ton), Medium
+                        Tipper(16ton-31ton), Large(31 ton to 45 ton). Our tipper has different wheel configurations 4x2, 6x4,
+                        8x4,  6x6 and the payload is from 5 to 30 tons.</li>"
+                            data-image-src="{{ url_for('static', filename='images/services/RS.jpeg') }}">View
+                            Service</button>
+                    </div>
+                </div>
+
+                <div class="ss" style="background: url('images/services/C&TM.jpg'); background-size: cover;">
+                    <div class="ss1">
+                        <h3>Cars and Truck Mechanical</h3>
+                        <br>
+                        <p>
+                            We ensure a new standard of excellence through our car and truck electrical services.
+                        </p>
+                        <br>
+                        <button onclick="showCard(this)" class="btn" data-title="Cars and Truck Mechanical"
+                            data-content="
+                    <li>For all of your auto electrical repair and maintenance needs, come to us. We service your vehicle
+                        with care, providing a high level of workmanship you can trust.</li>
+                    <li>We offer convenient battery testing and replacement services, designed to swiftly get you back on the road.</li>
+                    <li>From battery replacement and charging to installation, testing, and recycling, we cover it all.</li>
+                    <li>Our team of experts is well-equipped to handle all your starter-related needs efficiently, ensuring you can resume your journey promptly.</li>
+                    <li>We provide the best of the best electrical services for your cars and trucks.</li>"
+                            data-image-src="{{ url_for('static', filename='images/services/C&TM.jpg') }}">View
+                            Service</button>
+                    </div>
+                </div>
+
+                <div class="ss" style="background: url('images/services/DP&M.jpg'); background-size: cover;">
+                    <div class="ss1">
+                        <h3>Denting, Painting & Mechanical Work</h3>
+                        <br>
+                        <p>
+                            The future flows clear and we are your future.
+                        </p>
+                        <br>
+                        <button onclick="showCard(this)" class="btn" data-title="Denting, Painting & Mechanical Work"
+                            data-content="
+                    <li>We provide mechanical services that include welding, repair, and maintenance of trucks, tankers, tanks, and vacuum pumps throughout Dubai.</li>
+                    <li>We are committed to serving our clients with the best customer support and we promise to get your job done on time.</li>
+                    <li>From basic servicing to complex jobs, we are equipped with an advanced machinery team to handle projects of any type and of any size.</li>
+                    <li>Our company provides the best painting and denting services and carries out finishing work masterfully.</li>
+                    <li>Painting from scratch, giving a new color, changing the paint, or repaint, we have professionals and skilled painters for you.</li>"
+                            data-image-src="{{ url_for('static', filename='images/services/DP&M.jpg') }}">View
+                            Service</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="cl1">
+                <h1 class="up">Our Clients Around The World</h1>
+                <div class="redLine"></div>
+                <br>
+                <p>
+                    We collaborate with customers around the world and from all sectors, turning innovation into
+                    tangible results and transforming organizations into top-performing businesses.
+                </p>
+            </div>
+
+            <div class="cl2">
+                <div><img src="images/projects/AC.png" alt=""></div>
+
+                <div><img src="images/projects/AG.png" alt=""></div>
+
+                <div><img src="images/projects/Fit.jpg" alt=""></div>
+
+                <div><img src="images/projects/proscape.png" alt="" class="cl222">
+                </div>
+            </div>
+
+            <div class="cl2">
+                <div><img src="images/projects/GCL.png" alt=""></div>
+
+                <div><img src="images/projects/jorefco.png" alt=""></div>
+
+                <div><img src="images/projects/jeet.png" alt=""></div>
+
+                <div><img src="images/projects/hilton.png" alt="" class="cl222">
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------------------------------------- Footer Area ------------------------------------------------------->
+
+        <%- include('components/footer.ejs'); %>
+
+
+            <script src="effect.js"></script>
+</body>
+
+</html>

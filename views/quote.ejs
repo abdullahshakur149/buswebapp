@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="quote.css">
+    <link rel="shortcut icon" href="images/icons/3.png" type="image/x-icon">
+    <title>Request a Quote | GLT</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <%- include('components/navbar.ejs'); %>
+
+
+        <header>
+            <div class="img">
+                <h1>REQUEST A QUOTE</h1>
+            </div>
+        </header>
+
+        <!---------------------------------------------------------- Main Area ------------------------------------------------------->
+
+        <section class="quote">
+            <div class="q1">
+                <h1 class="up">NEED HELP? CALL US!</h1>
+                <div class="redLine"></div>
+                <br>
+                <h1 class="up">+971-503-543-488</h1>
+                <br>
+                <h3 class="up">Al Quoz Industrial Area – 4 Street – 21</h3>
+                <br>
+                <h1 id="em" class="up">info@rahimgul.com</h1>
+                <br>
+            </div>
+
+            <div class="q2">
+                <form action="{{ url_for('views.submit_quote') }}" method="post">
+                    <div class="q">
+                        <input type="text" name="fname" placeholder="First Name">
+                        <input type="text" name="lname" placeholder="Last Name">
+                    </div>
+
+                    <div class="q">
+                        <input type="number" name="number" placeholder="Phone Number">
+                        <input type="email" name="email" placeholder="Email Address">
+                    </div>
+
+                    <div class="q">
+                        <input type="text" name="c_name" placeholder="Company Name">
+                        <input type="text" name="w_link" placeholder="Website Link">
+                    </div>
+
+                    <div class="q">
+                        <input type="text" name="f_loc" placeholder="From Location (For Transport Service)">
+                        <input type="text" name="t_loc" placeholder="To Location (For Transport Service)">
+                    </div>
+
+                    <div class="q">
+                        <input type="date" name="f_date" placeholder="From Date">
+                        <input type="date" name="t_date" placeholder="To Date">
+                    </div>
+
+                    <div>
+                        <textarea name="message" rows="10" placeholder="Please write your message here."></textarea>
+                    </div>
+
+                    <div class="qb">
+                        <input type="submit" value="SEND">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!---------------------------------------------------------- Footer Area ------------------------------------------------------->
+
+
+        <%- include('components/footer.ejs'); %>
+
+
+            <script src="effect.js"></script>
+</body>
+
+</html>

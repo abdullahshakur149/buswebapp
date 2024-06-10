@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="projects.css">
+    <link rel="shortcut icon" href="images/icons/3.png" type="image/x-icon">
+    <title>Projects | GLT</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <%- include('components/navbar.ejs'); %>
+
+
+        <header>
+            <div class="img">
+                <h1>OUR PROJECTS</h1>
+            </div>
+        </header>
+
+        <!---------------------------------------------------------- Main Area ------------------------------------------------------->
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Modal Image">
+        </div>
+
+        <section class="projects">
+            <div class="p" style="background: url('images/services/DS.jpg'); background-size: cover;">
+                <div class="pp">
+                    <img src="images/icons/magnify.png" alt="" style="cursor: pointer;">
+                    <br>
+                    <h1>Project with Jorefco</h1>
+                </div>
+            </div>
+
+            <div class="p" style="background: url('images/services/IWS.jpg'); background-size: cover;">
+                <div class="pp">
+                    <img src="images/icons/magnify.png" alt="" style="cursor: pointer;">
+                    <br>
+                    <h1>Project with Hilton</h1>
+                </div>
+            </div>
+
+            <div class="p" style="background: url('images/services/GWR.jpg'); background-size: cover;">
+                <div class="pp">
+                    <img src="images/icons/magnify.png" alt="" style="cursor: pointer;">
+                    <br>
+                    <h1>Arabian Coast Project</h1>
+                </div>
+            </div>
+
+            <div class="p" style="background: url('images/services/C&TM.jpg'); background-size: cover;">
+                <div class="pp">
+                    <img src="images/icons/magnify.png" alt="" style="cursor: pointer;">
+                    <br>
+                    <h1>Project with Fit Movers</h1>
+                </div>
+            </div>
+
+            <div class="p" style="background: url('images/t2.jpg'); background-size: cover;">
+                <div class="pp">
+                    <img src="images/icons/magnify.png" alt="" style="cursor: pointer;">
+                    <br>
+                    <h1>Project with Proscape</h1>
+                </div>
+            </div>
+
+            <div class="p" style="background: url('images/t1.jpg'); background-size: cover;">
+                <div class="pp">
+                    <img src="images/icons/magnify.png" alt="" style="cursor: pointer; text-align: center">
+                    <br>
+                    <h1>Jeet Constructions Project</h1>
+                </div>
+            </div>
+
+            <div class="p" style="background: url('images/services/SWR.jpg'); background-size: cover;">
+                <div class="pp">
+                    <img src="images/icons/magnify.png" alt="" style="cursor: pointer;">
+                    <br>
+                    <h1>Project with GCL</h1>
+                </div>
+            </div>
+
+            <div class="p" style="background: url('images/services/SWS.jpg'); background-size: cover;">
+                <div class="pp">
+                    <img src="images/icons/magnify.png" alt="" style="cursor: pointer;">
+                    <br>
+                    <h1>Project with Al-Ghurair</h1>
+                </div>
+            </div>
+
+            <div class="p" style="background: url('images/t3.jpg'); background-size: cover;">
+                <div class="pp">
+                    <img src="images/icons/magnify.png" alt="" style="cursor: pointer;">
+                    <br>
+                    <h1>Project with GFC</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="cl1">
+                <h1 class="up">Our Clients Around The World</h1>
+                <div class="redLine"></div>
+                <br>
+                <p>
+                    We collaborate with customers around the world and from all sectors, turning innovation into
+                    tangible results and transforming organizations into top-performing businesses.
+                </p>
+            </div>
+
+            <div class="cl2">
+                <div><img src="images/projects/AC.png" alt=""></div>
+
+                <div><img src="images/projects/AG.png" alt=""></div>
+
+                <div><img src="images/projects/Fit.jpg" alt=""></div>
+
+                <div><img src="images/projects/proscape.png" alt="" class="cl222">
+                </div>
+            </div>
+
+            <div class="cl2">
+                <div><img src="images/projects/GCL.png" alt=""></div>
+
+                <div><img src="images/projects/Jorefco.png" alt=""></div>
+
+                <div><img src="images/projects/jeet.png" alt=""></div>
+
+                <div><img src="images/projects/hilton.png" alt="" class="cl222">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="c1">
+                <h1 class="rt">CONTACT US</h1>
+                <div class="redLine"></div>
+                <br>
+                <h5 class="up">NEED HELP? CALL US!</h5>
+                <br>
+                <h3 class="up">+971-503-543-488</h3>
+                <br>
+                <h4 class="up">Al Quoz Industrial Area – 4 Street – 21</h4>
+                <br>
+                <h3 id="em" class="up">info@rahimgul.com</h3>
+                <br>
+            </div>
+
+            <div class="c2">
+                <form action="{{ url_for('views.submit_contact') }}" method="post">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <br>
+                    <input type="email" name="email" placeholder="Email Address" id="email">
+                    <br>
+                    <input type="number" name="number" placeholder="Phone Number" id="number">
+                    <br>
+                    <textarea name="message" rows="10" placeholder="Please write your message here."></textarea>
+                    <br>
+                    <input type="submit" value="SEND">
+                </form>
+            </div>
+        </section>
+
+        <!---------------------------------------------------------- Footer Area ------------------------------------------------------->
+
+        <%- include('components/footer.ejs'); %>
+
+
+            <script src="effect.js"></script>
+            <script src="project.js"></script>
+</body>
+
+</html>

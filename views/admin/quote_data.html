@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='forms.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/icons/3.png') }}" type="image/x-icon">
+    <title>GLT | Quote Form</title>
+</head>
+<body>
+    <div class="one">
+        <h1>Quote Form Data</h1>
+    </div>
+
+    <div class="two">
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                    <th>Company Name</th>
+                    <th>Website Link</th>
+                    <th>From Location</th>
+                    <th>To Location</th>
+                    <th>From Date</th>
+                    <th>To Date</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for quote in quotes %}
+                    <tr>
+                        <td>{{ quote.fname }}</td>
+                        <td>{{ quote.fname }}</td>
+                        <td>{{ quote.email }}
+                        <td>{{ quote.number }}</td>
+                        <td>{{ quote.c_name }}</td>
+                        <td>{{ quote.w_link }}</td>
+                        <td>{{ quote.f_loc }}</td>
+                        <td>{{ quote.t_loc }}</td>
+                        <td>{{ quote.f_date }}</td>
+                        <td>{{ quote.t_date }}</td>
+                        <td>{{ quote.number }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

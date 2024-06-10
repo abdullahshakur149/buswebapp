@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/icons/3.png') }}" type="image/x-icon" />
+    <title>General Land Transport</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <%- include('components/navbar.ejs'); %>
+
+
+        <header>
+            <div class="img">
+                <div class="image">
+                    <img src="images/main1.jpg" />
+                    <div class="text">
+                        <h1>EASY & QUICK <br />RENTAL AND SUPPLY</h1>
+                        <h4>
+                            BOOK LOW COST TRANSPORT RENTAL, WATER SUPPLY AND REMOVAL AND
+                            DENTING, PAINTING AND MECHANICS OF YOUR VEHICLES WITH COMPLETE
+                            TRUST AND ASSURANCE.
+                        </h4>
+                        <button>
+                            <a href="{{ url_for('views.quote') }}">REQUEST A QUOTE</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img src="images/main2.jpg" />
+                    <div class="text">
+                        <h1>EASY & QUICK <br />RENTAL AND SUPPLY</h1>
+                        <h4>
+                            BOOK LOW COST TRANSPORT RENTAL, WATER SUPPLY AND REMOVAL AND
+                            DENTING, PAINTING AND MECHANICS OF YOUR VEHICLES WITH COMPLETE
+                            TRUST AND ASSURANCE.
+                        </h4>
+                        <button>
+                            <a href="{{ url_for('views.quote') }}">REQUEST A QUOTE</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img src="images/main3.jpg" />
+                    <div class="text">
+                        <h1>EASY & QUICK <br />RENTAL AND SUPPLY</h1>
+                        <h4>
+                            BOOK LOW COST TRANSPORT RENTAL, WATER SUPPLY AND REMOVAL AND
+                            DENTING, PAINTING AND MECHANICS OF YOUR VEHICLES WITH COMPLETE
+                            TRUST AND ASSURANCE.
+                        </h4>
+                        <button>
+                            <a href="{{ url_for('views.quote') }}">REQUEST A QUOTE</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!---------------------------------------------------------- Main Area ------------------------------------------------------->
+
+        <section class="about">
+            <div class="ahead">
+                <div class="ahead1">
+                    <div><img src="images/icons/about1.jpg" alt="" /></div>
+                </div>
+
+                <div class="ahead2">
+                    <div class="ahead21">
+                        <div><img src="images/icons/about2.jpg" alt="" /></div>
+                    </div>
+                    <div class="ahead22">
+                        <div><img src="images/icons/about3.jpg" alt="" /></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="adetails">
+                <h1 class="upward">ABOUT US</h1>
+                <div class="redLine"></div>
+                <br />
+                <h3 class="upward">
+                    WE ARE THE LEADERS IN THE TRANSPORTATION INDUSTRY!
+                </h3>
+                <br />
+                <p class="upward">
+                    Welcome to Rahim Gul General Land Transport, your go-to partner for
+                    unparalleled transport and logistics solutions. Our commitment to
+                    excellence shines through our efficient transport services, whether
+                    you need goods moved across short distances or intricate supply chains
+                    managed with precision. Count on Rahim Gul to streamline your
+                    distribution network and provide reliable cargo transportation that
+                    meets your unique requirements.
+                    <br />
+                    <br />
+                    Beyond transportation, we excel in water supply and removal services.
+                    From delivering crystal-clear sweet water to handling grey water
+                    removal, we cover your water needs comprehensively. Our expertise
+                    extends to maintaining recreational spaces, offering seamless filling
+                    and draining of swimming pools, and thorough water tank cleaning.
+                    Rahim Gul General Land Transport is your trusted choice for reliable,
+                    professional, and hygienic water-related services.
+                </p>
+                <br />
+                <button>
+                    <a href="{{ url_for('views.about') }}">MORE ABOUT US</a>
+                </button>
+            </div>
+        </section>
+
+        <section class="steps">
+            <div class="step white" id="stop">
+                <h1>3 EASY STEPS</h1>
+            </div>
+
+            <div class="step grey">
+                <h1>01</h1>
+                <br />
+                <h4>INQUIRY</h4>
+                <br />
+                <p>
+                    Call on +971-503-543-488 for a quote <br />
+                    and one of our experts will help by <br />
+                    understanding your requirements.
+                </p>
+            </div>
+
+            <div class="step white">
+                <h1>02</h1>
+                <br />
+                <h4>QUOTATION</h4>
+                <br />
+                <p>
+                    You will be assigned to a dedicated <br />
+                    transport manager, who will provide <br />
+                    you cost-effective solution for your <br />
+                    vehicle needs.
+                </p>
+            </div>
+
+            <div class="step grey">
+                <h1>03</h1>
+                <br />
+                <h4>RENTAL</h4>
+                <br />
+                <p>
+                    Complete the process with your assigned <br />
+                    agent and get your desired vehicle to <br />
+                    complete the job!
+                </p>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="s1">
+                <h1>Our Services</h1>
+            </div>
+
+            <div class="redLine"></div>
+
+            <div class="s2 upward">
+                <div class="ss">
+                    <div class="ss1"></div>
+                    <h1 class="content"><a href="">TRANSPORT RENTAL SERVICES</a></h1>
+                    <p class="conp">
+                        Elevate your travels with our reliable and flexible transport rental
+                        services.
+                    </p>
+                    <button class="conbtn">
+                        <a href="{{ url_for('views.services') }}">Show More</a>
+                    </button>
+                </div>
+
+                <div class="ss">
+                    <div class="ss2"></div>
+                    <h1 class="content"><a href="">SUPPLY & REMOVAL SERVICES</a></h1>
+                    <p class="conp">
+                        Our supply and removal services ensure a smooth and reliable
+                        transportation.
+                    </p>
+                    <button class="conbtn">
+                        <a href="{{ url_for('views.services') }}">Show More</a>
+                    </button>
+                </div>
+
+                <div class="ss">
+                    <div class="ss3"></div>
+                    <h1 class="content"><a href="">MECHANICS & DENT SERVICES</a></h1>
+                    <p class="conp">
+                        Restore your vehicle's glory with our expert mechanics and dent
+                        services – precision and care for every drive.
+                    </p>
+                    <button class="conbtn">
+                        <a href="{{ url_for('views.services') }}">Show More</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="choose">
+            <div class="chead">
+                <h1>WHY CHOOSE US</h1>
+            </div>
+
+            <div class="redLine"></div>
+
+            <div class="cdetails">
+                <div class="alternative upward">
+                    <img src="images/icons/garage.png" alt="" />
+                    <br />
+                    <h1>
+                        IN-HOUSE <br />
+                        GARAGE FACILITY
+                    </h1>
+                    <br />
+                    <p>
+                        Count on our unrivaled 24/7 emergency support, swiftly resolving
+                        critical issues, while delivering top-tier safety standards.
+                    </p>
+                </div>
+
+                <div class="upward">
+                    <img src="images/icons/gps.png" alt="" />
+                    <br />
+                    <h1>
+                        GPS <br />
+                        TRACKING
+                    </h1>
+                    <br />
+                    <p>
+                        Track your assets and vehicles in real-time with our reliable GPS
+                        tracking solution for enhanced security and peace of mind.
+                    </p>
+                </div>
+
+                <div class="alternative upward">
+                    <img src="images/icons/support.png" alt="" />
+                    <br />
+                    <h1>
+                        24/7 BREAKDOWN <br />
+                        SUPPORT
+                    </h1>
+                    <br />
+                    <p>
+                        Round the clock assistance for unexpected breakdowns, ensuring
+                        you’re back on track in no time.
+                    </p>
+                </div>
+
+                <div class="upward">
+                    <img src="images/icons/iso.png" alt="" />
+                    <br />
+                    <h1>
+                        ISO 9001 <br />
+                        CERTIFIED COMPANY
+                    </h1>
+                    <br />
+                    <p>
+                        A transportation company offering superior logistical expertise,
+                        seamless operations, and the utmost client contentment.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="c1">
+                <h1 class="right">CONTACT US</h1>
+                <div class="redLine"></div>
+                <br />
+                <h5 class="upward">NEED HELP? CALL US!</h5>
+                <br />
+                <h3 class="upward">+971-503-543-488</h3>
+                <br />
+                <h4 class="upward">Al Quoz Industrial Area – 4 Street – 21</h4>
+                <br />
+                <h3 id="em" class="upward">info@rahimgul.com</h3>
+                <br />
+            </div>
+
+            <div class="c2">
+                <form action="{{ url_for('views.submit_contact') }}" method="post">
+                    <input type="text" name="name" placeholder="Your Name" />
+                    <br />
+                    <input type="email" name="email" placeholder="Email Address" id="email" />
+                    <br />
+                    <input type="number" name="number" placeholder="Phone Number" id="number" />
+                    <br />
+                    <textarea name="message" rows="10" placeholder="Please write your message here."></textarea>
+                    <br />
+                    <input type="submit" value="SEND" />
+                </form>
+            </div>
+        </section>
+
+        <!---------------------------------------------------------- Footer Area ------------------------------------------------------->
+
+        <%- include('components/footer.ejs'); %>
+
+
+            <script src="script.js"></script>
+</body>
+
+</html>

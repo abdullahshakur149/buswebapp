@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="shortcut icon" href="images/icons/3.png" type="image/x-icon">
+    <title>Contact | GLT</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <%- include('components/navbar.ejs'); %>
+
+
+        <header>
+            <div class="img">
+                <h1>CONTACT US</h1>
+            </div>
+        </header>
+
+        <!---------------------------------------------------------- Main Area ------------------------------------------------------->
+
+        <section class="con-details">
+            <div class="cons">
+                <div class="con-d">
+                    <img src="images/icons/location.png" alt="">
+                    <br>
+                    <h1>HEAD OFFICE</h1>
+                    <p>
+                        Al Quoz Industrial Area – 4 Street – 21
+                    </p>
+                </div>
+
+                <div class="con-d">
+                    <img src="images/icons/contact.png" alt="">
+                    <br>
+                    <h1>CALL US</h1>
+                    <p>Inquiry: +971-567-008-789</p>
+                    <p>Details: +971-503-543-488</p>
+                </div>
+
+                <div class="con-d">
+                    <img src="images/icons/mail.png" alt="">
+                    <br>
+                    <h1>EMAIL ADDRESS</h1>
+                    <p>info@rahimgul.com</p>
+                </div>
+
+                <div class="con-d">
+                    <img src="images/icons/clock.png" alt="">
+                    <br>
+                    <h1>WORKING HOURS</h1>
+                    <p>
+                        Mon-Sat 9:00am to 6:00pm <br>
+                        Emergency Services : 24 × 7
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="c1">
+                <div class="c11">
+                    <h4 class="rt">NEED ANY HELP?</h4>
+                    <h1 class="rt">GET IN TOUCH WITH US?</h1>
+                    <div class="redLine"></div>
+                    <br>
+                    <p class="up">
+                        Reach out to us for seamless transportation solutions and exceptional service – your journey
+                        starts with a click or a call.
+                    </p>
+                </div>
+
+                <div class="c12">
+                    <div class="c121 rt">
+                        <div>
+                            <img src="images/icons/call.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Have any question?</h4>
+                            <p>+971-50-354-3488</p>
+                        </div>
+                    </div>
+
+                    <div class="c121 rt">
+                        <div>
+                            <img src="images/icons/email.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Write email</h4>
+                            <p>info@rahimgul.com</p>
+                        </div>
+                    </div>
+
+                    <div class="c121 rt">
+                        <div>
+                            <img src="images/icons/loc.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Visit anytime</h4>
+                            <p>Al Quoz Industrial Area – 4 Street – 21</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c2">
+                <div class="c21 up">
+                    <p>SEND US EMAIL</p>
+                    <h1>Feel free to write.</h1>
+                </div>
+
+                <div class="c22">
+                    <form action="views.submit_contact" method="post">
+                        <div class="c">
+                            <input type="text" name="name" placeholder="Your Name">
+                            <input type="number" name="number" placeholder="Phone Number">
+                        </div>
+
+                        <div class="c">
+                            <input type="email" name="email" placeholder="Email Address">
+                        </div>
+
+                        <div>
+                            <textarea name="message" rows="10" placeholder="Please write your message here."></textarea>
+                        </div>
+
+                        <div class="cb">
+                            <input type="submit" value="SEND">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------------------------------------- Footer Area ------------------------------------------------------->
+
+        <%- include('components/footer.ejs'); %>
+
+
+            <script src="effect.js"></script>
+</body>
+
+</html>

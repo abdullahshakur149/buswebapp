@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size:medium;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+body {
+    background-color: #fff;
+}
+
+.bortom {
+    border-bottom: 2px solid #000;
+}
+
+.redLine {
+    width: 10%;
+    border-top: 3px solid blue;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+/* =================================================================== JavaScript Area ===================================================================  */
+
+.up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.2s ease-out;
+}
+  
+.upVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =================================================================== Head Area ===================================================================  */
+
+nav {
+    width: 100%;
+    min-height: 15vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.ham {
+    text-align: end;
+    margin-right: 5%;
+    width: 20%; 
+    height: 100%;
+    display: none;
+    cursor: pointer; 
+}
+
+.ham>img {
+    width: 30px;
+    height: 30px;
+}
+
+.list {
+    display: none;
+    z-index: 77777;
+}
+
+.list>ul>li {
+    width: 90%;
+    height: 5.55vh;
+    border-bottom: 0.5px solid silver;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list>ul>li>a {
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    color: #000;
+}
+
+.list>ul>li>a:hover {
+    background: #000;    
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    min-width: 20px;
+    height: 20px;
+}
+
+nav div ul li a {
+    color: #000;
+    padding: 5px 15px 5px 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu>ul>li>a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.logo>a {
+    width: 80%;
+}
+
+.logo>a>img {
+    height: 80%;
+    width: 48%;
+}
+
+header {
+    max-width: 100%;
+    height: 50vh;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    background: url('images/icons/head.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img>h1 {
+    font-size: 6em;
+    font-weight: bolder;
+    color: #000;
+    animation: onLoad 1s ease-in;
+}
+
+@keyframes onLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* =================================================================== Main Area ===================================================================  */
+
+.quote {
+    width: 100%;
+    height: auto; 
+    background: url('images/icons/bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0 2%;
+}
+
+.q1 {
+    width: 35%; 
+    padding: 20px; 
+    text-align: justify;
+}
+
+.q1>h1 {
+    font-size: 1.5em; 
+    font-weight: bolder;
+    color: #000;
+}
+
+.q1>h3, .q1>h4 {
+    font-weight: 200;
+}
+
+#em {
+    color: #000;
+}
+
+.q2 {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%; 
+    max-width: 600px;
+}
+
+.q {
+    display: flex;
+}
+
+.q>input {
+    width: 50%; 
+    height: 3vh;
+    margin: 10px 1%;
+    padding: 10px;
+}
+
+.q2>form>div>textarea {
+    width: 95%; 
+    height: 15vh;
+    margin: 10px 1%;
+    padding: 10px;
+}
+
+.qb>input {
+    width: 98%; 
+    height: 6vh;
+    margin: 10px 1%;
+    background: #fff;
+    border: 0.5px solid #000;
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.qb>input[type=submit]:hover {
+    background: blue;
+    border: none;
+    color: #fff;
+}
+
+/* =================================================================== Footer Area ===================================================================  */
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.f1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f1 iframe {
+    width: 98%;
+    height: 30vh;
+    border-radius: 10px;
+    margin: 2% 0 2%;
+}
+
+.f2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.l1 {
+    width: 20%;
+    height: 90%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+}
+
+.extralinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.extralinks > a > img {
+    width: 25px;
+    height: 25px;
+    border: 0.5px solid white;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.l1>div {
+    display: flex;
+    justify-content: top;
+    align-items: left;
+    margin: 10px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    padding: 5px;
+}
+
+.l1>div>img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.l2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+}
+
+.l2>ul>li {
+    list-style: none;
+    margin-top: 8px;
+}
+
+.l2>ul>li>a {
+    color: #000;
+}
+
+.l2>ul>li:hover a {
+    text-decoration: underline;
+}
+
+.l3 {
+    margin-left: 2%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.l31 {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l32 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l32>div {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.l32>div>ul>li {    
+    margin-top: 8px;
+    list-style: none;
+}
+
+.l32>div>ul>li>a {
+    color: #000;
+}
+
+.f3 {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.f31 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f32 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f32>ul {
+    display: flex;
+}
+
+.f32>ul>li {
+    list-style: none;
+    margin-right: 10px;
+    padding-right: 10px;
+    min-width: 20px;
+    border-right: 1px solid white;
+}
+
+#last {
+    border: none;
+}
+
+.f32>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* =================================================================== Media Queries ===================================================================  */
+
+@media screen and (width <= 1200px) {
+    .logo {
+        width: 30%; 
+    }
+
+    .logo>img {
+        width: 30%;
+    }
+
+    .ham {
+        display: block; 
+    }
+
+    .menu {
+        display: none; 
+    }
+
+    .list {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list.active {
+        display: block;
+    }
+
+    .list>ul>li {
+        width: 100%; 
+        height: auto; 
+        border-bottom: 0.5px solid silver;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list>ul>li>a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .list>ul>li>a:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .img {   
+        align-items: center;
+    }
+
+    .img>h1 {
+        width: 60%; 
+        font-size: 2em; 
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .quote {
+        flex-direction: column; 
+    }
+
+    .q1 {
+        width: 90%; 
+        text-align: center; 
+    }
+
+    .q2 {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .q>input {
+        width: 70%;
+    }
+
+    .footer {
+        height: fit-content;
+    }
+
+    .f2 {
+        height: max-content;
+        background: none;
+    }
+
+    .l1 {
+        width: 40%;
+        height: fit-content;
+    }
+
+    .l2 {
+        display: none;
+    }
+
+    .l3 {
+        width: 40%;
+    }
+
+    .f3 {
+        height: max-content;
+        flex-direction: column;
+    }
+
+    .f3>div {
+        width: 90%;
+    }
+}
+
+@media screen and (width <= 900px) {
+    .logo {
+        width: 50%; 
+    }
+
+    .q {
+        width: 100%;
+    }
+
+    .l1 {
+        min-width: 70%;
+    }
+
+    .l2, .l3 {
+        display: none;
+    }
+}
+
+@media screen and (width <= 500px) {
+    .logo {
+        width: 50%; 
+        height: auto;
+    }
+
+    .logo>img {
+        width: 50%;
+    }
+
+    .img>h1 {
+        width: 80%;
+    }
+
+    .q {
+        flex-direction: column;
+    }
+
+    .q>input {
+        width: 90%; 
+    }
+
+    .q2>form>div>textarea {
+        width: 90%; 
+    }
+
+    textarea {
+        width: 90%; 
+    }
+
+    iframe {
+        width: 90%;
+        height: 50%;
+    }
+}
